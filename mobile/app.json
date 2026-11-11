@@ -1,0 +1,33 @@
+{
+  "expo": {
+    "name": "EventLens",
+    "slug": "eventlens-mobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "backgroundColor": "#102016"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSPhotoLibraryUsageDescription": "Choose an event video to analyse with EventLens."
+      }
+    },
+    "android": {
+      "permissions": ["READ_MEDIA_VIDEO", "READ_EXTERNAL_STORAGE"],
+      "package": "com.eventlens.mobile"
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Choose an event video to analyse with EventLens.",
+          "cameraPermission": false,
+          "microphonePermission": false
+        }
+      ],
+      "expo-video"
+    ]
+  }
+}

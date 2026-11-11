@@ -16,3 +16,5 @@
 # Local uploads and generated output
 backend/uploads/*
 backend/generated/*
+backend/*.sqlite3
+backend/event_classifier.joblib

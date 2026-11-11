@@ -74,4 +74,7 @@ The analysis response may contain:
 Bounding box coordinates in this UI are percentages (0–100) relative to the image. Convert pixel coordinates to percentages in the backend or adapt the component.
 
 ## Important
-Until the Flask endpoints exist, dashboard/report pages will show a backend connection notice and analysis submission will fail with a network error. The UI and local video preview still work. Never place Supabase service-role/secret keys in `VITE_` variables or frontend code. Do not commit `.env.local`.
+Set `VITE_API_BASE_URL` to the deployed Flask API host when running outside the
+Render Blueprint. The frontend attaches the signed-in Supabase access token to
+API requests. Never place Supabase service-role/secret keys in `VITE_`
+variables or frontend code. Do not commit `.env.local`.
